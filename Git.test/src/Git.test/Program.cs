@@ -10,6 +10,7 @@ namespace Git.test
         public void Main(string[] args)
         {
             Console.WriteLine("Hello Git");
+            Console.WriteLine("Whats up?");
             Console.WriteLine("Goodbye world");
         }
     }
