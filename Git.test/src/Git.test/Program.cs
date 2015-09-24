@@ -24,6 +24,7 @@ namespace Git.test
                     quiz.SportQuestion();
                     break;
                 default:
+                    Console.WriteLine("Du skulle ha valt Sport! Nu avslutar vi programmet. Skäms!");
                     break;
             }
 
