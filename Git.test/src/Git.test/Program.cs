@@ -14,6 +14,9 @@ namespace Git.test
             Console.WriteLine("Enter your name!");
             Console.ReadLine();
             Console.WriteLine("Goodbye world");
+
+
+            Console.WriteLine("awdjkölejgh");
         }
     }
 }
