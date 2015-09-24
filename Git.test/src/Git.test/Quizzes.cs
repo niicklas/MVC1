@@ -20,7 +20,7 @@ namespace Git.test
             Console.WriteLine("C: Skellefteå");
             Console.WriteLine("D: Luleå");
             string answer=Console.ReadLine();
-            if (answer.Equals("A"))
+            if (answer.Equals("B"))
             {
                 Console.WriteLine("Rätt svar!!");
             }
