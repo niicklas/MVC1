@@ -10,6 +10,7 @@ namespace Git.test
         public Quizzes()
         {
             Console.WriteLine("hej hej");
+            Console.WriteLine("kategori 1: ");
         }
 
     }
