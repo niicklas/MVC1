@@ -9,14 +9,26 @@ namespace Git.test
     {
         public Quizzes()
         {
-            Console.WriteLine("hej hej");
-            Console.WriteLine("kategori 1: ");
-            Console.WriteLine("Här får man välja kategorin");
-            Console.WriteLine("Skriv en av kategorierna:");
-            Console.WriteLine("Sport S");
-            Console.WriteLine("Historia H");
-            Console.WriteLine("Popkultur P");
+
         }
 
+        public void SportQuestion()
+        {
+            Console.WriteLine("Vilket är sveriges bästa hockeylag?");
+            Console.WriteLine("A: Brynäs");
+            Console.WriteLine("B: Timrå");
+            Console.WriteLine("C: Skellefteå");
+            Console.WriteLine("D: Luleå");
+            string answer=Console.ReadLine();
+            if (answer.Equals("A"))
+            {
+                Console.WriteLine("Rätt svar!!");
+            }
+            else
+            {
+                Console.WriteLine("Fel svar!!");
+            }
+
+        }
     }
 }
