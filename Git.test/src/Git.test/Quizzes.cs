@@ -9,7 +9,11 @@ namespace Git.test
     {
         public Quizzes()
         {
-
+            Console.WriteLine("Här får man välja kategorin");
+            Console.WriteLine("Skriv en av kategorierna:");
+            Console.WriteLine("Sport S");
+            Console.WriteLine("Historia H");
+            Console.WriteLine("Popkultur P");
         }
 
     }
