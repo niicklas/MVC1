@@ -9,6 +9,8 @@ namespace Git.test
     {
         public Quizzes()
         {
+            Console.WriteLine("hej hej");
+            Console.WriteLine("kategori 1: ");
             Console.WriteLine("Här får man välja kategorin");
             Console.WriteLine("Skriv en av kategorierna:");
             Console.WriteLine("Sport S");
