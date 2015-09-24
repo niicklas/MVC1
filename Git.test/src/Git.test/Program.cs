@@ -11,6 +11,8 @@ namespace Git.test
         {
             Console.WriteLine("Hello Git");
             Console.WriteLine("Whats up!?");
+            Console.WriteLine("Enter your name!");
+            Console.ReadLine();
             Console.WriteLine("Goodbye world");
         }
     }
