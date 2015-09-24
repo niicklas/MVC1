@@ -12,6 +12,9 @@ namespace Git.test
             Console.WriteLine("Hello Git");
             Console.WriteLine("Whats up!?");
             Console.WriteLine("Goodbye world");
+
+
+            Console.WriteLine("awdjkölejgh");
         }
     }
 }
