@@ -9,7 +9,7 @@ namespace Git.test
     {
         public Quizzes()
         {
-
+            Console.WriteLine("hej hej");
         }
 
     }
