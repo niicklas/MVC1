@@ -13,12 +13,12 @@ namespace MVC1.Models
 
         [DisplayName("Namn")]
         [Required]
-        [RegularExpression(@"^[a-zAåäöÅÄÖ ]{2,40}$", ErrorMessage ="Mellan 2 och 40 bokstäver krävs.")]
+        [RegularExpression(@"^[a-zA-ZåäöÅÄÖ ]{2,40}$", ErrorMessage ="Mellan 2 och 40 bokstäver krävs.")]
         public string Name { get; set; }
 
         [DisplayName("Födelsedag")]
         [Required]
-        [Range(19000000, 20200000, ErrorMessage ="Felaktigt födelsadatum")]
+        [Range(19000000, 20200000, ErrorMessage ="Felaktigt födelsadatum, ange på forlmeln ÅÅÅÅMMDD")]
         public int Birthday { get; set; }
 
         [DisplayName("Klubb")]

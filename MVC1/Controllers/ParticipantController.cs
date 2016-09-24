@@ -52,6 +52,11 @@ namespace MVC1.Controllers
         [HttpGet]
         public ActionResult Modify(ParticipantViewModel _model)
         {
+            //var _model2 = new ParticipantCreateViewModel
+            //{
+            //    Participant = _model
+            //};
+
             return View(_model);
         }
 
