@@ -1,0 +1,48 @@
+﻿
+@model List<MVC1.Models.ParticipantViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/PartialLayoutPage.cshtml";
+    var temp = new MVC1.Models.ParticipantViewModel();
+}
+
+
+<div>
+    <hr/>
+    <h3>Anmälda till tävlingen</h3>
+    @if (Model.Count() == 0)
+    {
+        <h4>Ingen är anmäld till tävlingen än</h4>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped table-hover">
+            <tr>
+                <th>@Html.DisplayNameFor(x => temp.Name)</th>
+                <th>@Html.DisplayNameFor(x => temp.Birthday)</th>
+                <th>@Html.DisplayNameFor(x => temp.Team)</th>
+            </tr>
+            @foreach (var participant in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(x => participant.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => participant.Birthday)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => participant.Team)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Ändra", "Modify", participant)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    }
+    
+
+</div>

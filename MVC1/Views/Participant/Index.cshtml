@@ -1,0 +1,11 @@
+﻿@model List<MVC1.Models.ParticipantViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+    var temp = new MVC1.Models.ParticipantViewModel();
+}
+
+
+    @Html.Partial("ParticipantListPartial", Model)
+

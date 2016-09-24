@@ -1,0 +1,70 @@
+﻿@model MVC1.Models.Participant
+
+@{
+    ViewBag.Title = "Modify";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    <hr />
+    <div class="form-group">
+        <div class="input-group col-md-5">
+            <div class="input-group-addon">
+                @Html.DisplayNameFor(x => x.Name)
+            </div>
+            @Html.EditorFor(x => x.Name,
+    new
+    {
+        htmlAttributes =
+        new
+        {
+            @value = Model.Name,
+            @class = "form-control"
+        }
+    })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group col-md-5">
+            <div class="input-group-addon">
+                @Html.DisplayNameFor(x => x.Birthday)
+            </div>
+            @Html.EditorFor(x => x.Birthday,
+    new
+    {
+        htmlAttributes =
+        new
+        {
+            @value = Model.Birthday,
+            @class = "form-control"
+        }
+    })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group col-md-5">
+            <div class="input-group-addon">
+                @Html.DisplayNameFor(x => x.Team)
+            </div>
+            @Html.EditorFor(x => x.Team,
+    new
+    {
+        htmlAttributes =
+        new
+        {
+            @value = Model.Team,
+            @class = "form-control"
+        }
+    })
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Uppdatera" name="save" class="btn-success btn-xs" />
+        <input type="submit" value="Ta bort deltagare" name="delete" class="btn-danger btn-group-lg" />
+    </div>
+}
+

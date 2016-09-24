@@ -1,0 +1,28 @@
+﻿@model List<MVC1.Models.ParticipantViewModel>
+
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/LayoutPage.cshtml";
+}
+
+<h2>Order</h2>
+
+<div>
+    @foreach (var product in Model)
+    {
+        <div>
+            <dl class="KlickEvent">
+                <dt>@Html.DisplayNameFor(x => product.Name)</dt>
+                <dd>@Html.DisplayFor(x => product.Name)</dd>
+            </dl>
+            <dl class="AttToggla" style="display:none">
+                <dt>@Html.DisplayNameFor(x => product.Birthday)</dt>
+                <dd>@Html.DisplayFor(x => product.Birthday)</dd>
+
+                <dt>@Html.DisplayNameFor(x => product.Team)</dt>
+                <dd>@Html.DisplayFor(x => product.Team)</dd>
+            </dl>
+        </div>
+    }
+</div>
+<script src="~/Scripts/Custom/JQuery-Own.js"></script>
