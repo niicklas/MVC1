@@ -16,7 +16,7 @@ namespace MVC1.Controllers
             return View(participantList);
         }
 
-        [HttpGet] 
+        [HttpGet]  
         public ActionResult Create()
         {
             ParticipantListViewModel participantListViewModel = new ParticipantListViewModel();
