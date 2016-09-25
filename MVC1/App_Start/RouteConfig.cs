@@ -19,7 +19,7 @@ namespace MVC1
                 url: "Create",
                 defaults: new
                 {
-                    controller = "Main",
+                    controller = "Participant",
                     action = "Create",
                 }
             );
