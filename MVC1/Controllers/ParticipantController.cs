@@ -52,17 +52,12 @@ namespace MVC1.Controllers
         [HttpGet]
         public ActionResult Modify(ParticipantViewModel _model)
         {
-            //var _model2 = new ParticipantCreateViewModel
-            //{
-            //    Participant = _model
-            //};
 
             return View(_model);
         }
 
         [HttpPost]
-        [ActionName("Modify")]
-        public ActionResult Modify_Post(ParticipantViewModel _model, string save, string delete)
+        public ActionResult Modify(ParticipantViewModel _model, string save, string delete)
         {
             var tmpProduct = participantList.Find(x => x.Id == _model.Id);
             if (save != null)
@@ -78,7 +73,7 @@ namespace MVC1.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Order()
+        public ActionResult NameList()
         {
             return View(participantList);
         }

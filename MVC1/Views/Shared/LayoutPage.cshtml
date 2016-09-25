@@ -12,9 +12,9 @@
 <body>
     <div class="col-md-offset-1 row">
         @Html.ActionLink("Hem", "Index", "Main", null, new {@class ="btn btn-info"})
-        @Html.ActionLink("Anmälda", "Index", null, "Participant", new { @class = "btn btn-primary" })
-        @Html.ActionLink("Anmälan", "Create", null, "Participant", new {@class = "btn btn-primary" })
-        @Html.ActionLink("Beställ", "Order", null, "Participant", new { @class = "btn btn-primary" })
+        @Html.ActionLink("Anmälda", "Index", "Participant", null, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Anmälan", "Create", "Participant", null,  new {@class = "btn btn-primary" })
+        @Html.ActionLink("Namnlista", "NameList", "Participant", null,  new { @class = "btn btn-primary" })
     </div>
     <div class="row col-md-offset-1">
         @RenderBody()

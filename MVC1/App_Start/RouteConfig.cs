@@ -12,25 +12,36 @@ namespace MVC1
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            //routes.IgnoreRoute("Main/Create");
-
-            routes.MapRoute(
-                name: "Create",
-                url: "Create",
-                defaults: new
-                {
-                    controller = "Participant",
-                    action = "Create",
-                }
-            );
+            //routes.IgnoreRoute("Participant/Create");
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "",
                 defaults: new
                 {
                     controller = "Main",
                     action = "Index",
+                    id = UrlParameter.Optional
+                }
+            );
+
+            routes.MapRoute(
+                name: "Participants",
+                url: "{action}",
+                defaults: new
+                {
+                    controller = "Participant",
+                    action = "All",
+                }
+            );
+
+            routes.MapRoute(
+                name: "Info",
+                url: "{controller}/{action}/{id}",
+                defaults: new
+                {
+                    controller = "Main",
+                    action = "All",
                     id = UrlParameter.Optional
                 }
             );

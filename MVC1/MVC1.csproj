@@ -123,7 +123,7 @@
     <Content Include="Views\Participant\Create.cshtml" />
     <Content Include="Views\Shared\LayoutPage.cshtml" />
     <Content Include="Views\Participant\Modify.cshtml" />
-    <Content Include="Views\Participant\Order.cshtml" />
+    <Content Include="Views\Participant\NameList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -146,6 +146,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\PartialLayoutPage.cshtml" />
+    <Content Include="Views\Main\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

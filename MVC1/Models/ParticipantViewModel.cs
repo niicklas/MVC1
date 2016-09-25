@@ -18,7 +18,7 @@ namespace MVC1.Models
 
         [DisplayName("Födelsedag")]
         [Required]
-        [Range(19000000, 20200000, ErrorMessage ="Felaktigt födelsadatum, ange på formeln ÅÅÅÅMMDD")]
+        [Range(19000000, 20100000, ErrorMessage ="Felaktigt födelsadatum, ange på formeln ÅÅÅÅMMDD och se till att deltagaren måste var född före 2010")]
         public int Birthday { get; set; }
 
         [DisplayName("Klubb")]

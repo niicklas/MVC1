@@ -61,7 +61,6 @@ C:\Projects\Github\MVC1\MVC1\bin\System.Web.Webpages.Deployment.xml
 C:\Projects\Github\MVC1\MVC1\bin\System.Web.Webpages.Razor.xml
 C:\Projects\Github\MVC1\MVC1\bin\System.Web.Helpers.xml
 C:\Projects\Github\MVC1\MVC1\bin\System.Web.Mvc.xml
-C:\Projects\Github\MVC1\MVC1\obj\Debug\MVC1.csprojResolveAssemblyReference.cache
 C:\Projects\Github\MVC1\MVC1\obj\Debug\MVC1.dll
 C:\Projects\Github\MVC1\MVC1\obj\Debug\MVC1.pdb
 C:\Users\nicklas\Documents\Projects\Git\MVC1\MVC1\bin\roslyn\csc.exe
@@ -97,3 +96,4 @@ C:\Users\nicklas\Documents\Projects\Git\MVC1\MVC1\bin\System.Web.Mvc.xml
 C:\Users\nicklas\Documents\Projects\Git\MVC1\MVC1\obj\Debug\MVC1.csprojResolveAssemblyReference.cache
 C:\Users\nicklas\Documents\Projects\Git\MVC1\MVC1\obj\Debug\MVC1.dll
 C:\Users\nicklas\Documents\Projects\Git\MVC1\MVC1\obj\Debug\MVC1.pdb
+C:\Projects\Github\MVC1\MVC1\obj\Debug\MVC1.csprojResolveAssemblyReference.cache
